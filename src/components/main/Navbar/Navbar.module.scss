@@ -1,0 +1,21 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.title {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.btnActions {
+  display: flex;
+  gap: 10px;
+}

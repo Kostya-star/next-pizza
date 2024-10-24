@@ -1,0 +1,19 @@
+.Tabs {
+  display: flex;
+  gap: 15px;
+  padding: 5px;
+  background-color: rgb(233, 229, 229);
+}
+
+.tab {
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.active {
+  color: white;
+  background-color: var(--secondary-color);
+}
