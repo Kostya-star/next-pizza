@@ -15,27 +15,25 @@ export function HomeSideFiltration() {
 
   return (
     <div className={cls.filters}>
-      <Container>
-        {/* TOP FILTERS */}
-        <VStack className={cls.bottomDistance}>
-          <Checkbox value label="can choose" onChange={(val) => {}} />
-          <Checkbox value label="new" onChange={(val) => {}} />
-        </VStack>
+      {/* TOP FILTERS */}
+      <VStack className={cls.bottomDistance}>
+        <Checkbox value label="can choose" onChange={(val) => {}} />
+        <Checkbox value label="new" onChange={(val) => {}} />
+      </VStack>
 
-        {/* PRICES FILTER */}
-        <VStack className={cls.bottomDistance}>
-          <Input type="number" min="0" max="100" value={val} label="price from" minWidth onChange={setVal} />
-          <Input type="number" min="0" max="100" value={val} label="price to" minWidth onChange={setVal} />
-        </VStack>
+      {/* PRICES FILTER */}
+      <VStack className={cls.bottomDistance}>
+        <Input type="number" min="0" max="100" value={val} label="price from" minWidth onChange={setVal} />
+        <Input type="number" min="0" max="100" value={val} label="price to" minWidth onChange={setVal} />
+      </VStack>
 
-        {/* INGREDIENTS FILTERS*/}
-        <VStack>
-          <Title title="Ingredients" type="h3" />
-          {ingredients.map((ingr) => (
-            <Checkbox key={ingr} value={true} label={ingr} onChange={(val) => console.log(val)} />
-          ))}
-        </VStack>
-      </Container>
+      {/* INGREDIENTS FILTERS*/}
+      <VStack>
+        <Title title="Ingredients" type="h3" />
+        {ingredients.map((ingr) => (
+          <Checkbox key={ingr} value={true} label={ingr} onChange={(val) => console.log(val)} />
+        ))}
+      </VStack>
     </div>
   );
 }
