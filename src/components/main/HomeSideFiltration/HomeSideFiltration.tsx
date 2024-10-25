@@ -22,9 +22,9 @@ export function HomeSideFiltration() {
       </VStack>
 
       {/* PRICES FILTER */}
-      <VStack className={cls.bottomDistance}>
-        <Input type="number" min="0" max="100" value={val} label="price from" minWidth onChange={setVal} />
-        <Input type="number" min="0" max="100" value={val} label="price to" minWidth onChange={setVal} />
+      <VStack gap='8' className={cls.bottomDistance}>
+        <Input type="number" placeholder='0' min="0" max="100" value={val} label="price from" minWidth onChange={setVal} />
+        <Input type="number" placeholder='100' min="0" max="100" value={val} label="price to" minWidth onChange={setVal} />
       </VStack>
 
       {/* INGREDIENTS FILTERS*/}

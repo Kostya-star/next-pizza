@@ -1,8 +1,13 @@
 :root {
   --primary-color: black;
   --secondary-color: #FE5F00;
-  --secondary-color-dark: #f2a16e;
+  --secondary-color-dark: #c96121;
   --red-color: tomato;
+  --card-bgc: #e9e3e3;
+}
+
+body {
+  background-color: rgb(255, 211, 218);
 }
 
 * {

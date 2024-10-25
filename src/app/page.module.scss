@@ -1,3 +1,8 @@
-.content {
+.contentWrapper {
   margin-top: 50px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 20% 80%;
 }

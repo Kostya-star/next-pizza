@@ -20,11 +20,11 @@ export default function Home() {
     <div style={{ height: '1000px' }}>
       <HomeHeader />
 
-      <Container className={cls.content}>
-        <HStack gap="32">
+      <Container className={cls.contentWrapper}>
+        <div className={cls.content}>
           <HomeSideFiltration />
           <ProductsList title="Pizzas List" products={Array.from({ length: 10 }, (_, index) => (product))} />
-        </HStack>
+        </div>
       </Container>
     </div>
   );
